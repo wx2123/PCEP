@@ -50,4 +50,44 @@ print("Monty Python.")
 print("My name is", "Python.", end="\n")
 print("Monty Python.")
 
+# 2.1.1.15 Your very first program: The print() function - the keyword arguments
+print("My name is ", end="")
+print("Monty Python.")
 
+# 2.1.1.16 Your very first program: The print() function – the keyword arguments
+print("My", "name", "is", "Monty", "Python.", sep="-")
+print("My", "name", "is", "Monty", "Python.", sep="**")
+
+
+# 2.1.1.17 Your very first program: The print() function - the keyword arguments
+print("My", "name", "is", sep="_", end="*")
+print("Monty", "Python.", sep="*", end="*\n")
+
+# 2.1.1.18 LAB: The print() function
+print("Programming","Essentials","in")
+print("Python")
+
+print("Programming","Essentials","in",sep="***",end="...")
+print("Python")
+
+# 2.1.1.19 LAB: Formatting the output: LAB
+print("    *")
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+
+# minimize the number of print() function invocations by inserting the \n sequence into the strings
+print("    *")
+print("   * ",end='*\n')
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+
+# make the arrow twice as large (but keep the proportions)
