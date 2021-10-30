@@ -91,3 +91,36 @@ print("  *   *")
 print("  *****")
 
 # make the arrow twice as large (but keep the proportions)
+
+
+
+# 2.2.1.2 Python literals: Literals - the data in itself
+print("2")
+print(2)
+
+# 2.2.1.3 Python literals: Integers
+print(1_111 + 2_222)
+
+#2.2.1.4 Python literals: Integers: oct and hexadecimal numbers
+print(0o123) # 八进制83
+print(0x123) # 十六进制291
+
+# 2.2.1.7 Python literals: Coding floats
+print(0.0000000000000000000001)
+
+# 2.2.1.8 Python literals: Strings
+print("I like \"Monty Python\"")
+print('I like "Monty Python"')
+
+# 2.2.1.9 Python literals: Coding strings
+print('I\'m Monty Python')
+print("I'm Monty Python")
+
+# 2.2.1.10 Python literals: Boolean values
+print(True > False)
+print(True < False)
+
+# 2.2.1.11 LAB: Python literals - strings
+print('"I\'m"')
+print('""learning""')
+print('"""Python"""')
