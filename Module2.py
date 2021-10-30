@@ -25,3 +25,9 @@ print("Down came the rain and washed the spider out.")
 print("The itsy bitsy spider climbed up the waterspout.")
 print()
 print("Down came the rain and washed the spider out.")
+
+# 2.1.1.10 Your very first program
+print("The itsy bitsy spider\nclimbed up the waterspout.")
+print()
+print("Down came the rain\nand washed the spider out.")
+
