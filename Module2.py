@@ -227,3 +227,9 @@ kilometers_to_miles = kilometers / 1.61
 print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
 print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
 
+# 2.4.1.10 Variables - data-shaped boxes: LAB
+x =  -1 # hardcode your test data here
+x = float(x)
+y = 3 * x ** 3 - 2 * x ** 2 + 3 * x -1
+# write your code here
+print("y =", y)
