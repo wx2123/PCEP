@@ -187,3 +187,43 @@ print(17%3)
 print(14%3.5)
 
 print(10%7%2)
+
+# 2.4.1.2 Variables - data-shaped boxes: Correct and incorrect variable names
+变量=1
+变量/2
+
+# 2.4.1.2 Variables - data-shaped boxes: Creating variables
+var = 1
+print(var)
+
+# 2.4.1.4 Variables - data-shaped boxes: Assigning a new value to an already existing variable
+var = 100
+var = 200 + 300
+print(var)
+
+# 2.4.1.5 Variables - data-shaped boxes: Solving simple mathematical problems
+a = 3.0
+b = 4.0
+c = (a ** 2 + b ** 2) ** 0.5
+print("c =", c)
+
+# 2.4.1.6 Variables - data-shaped boxes: LAB
+john = 3
+mary = 4
+adam = 5
+print("John:", john, "Mary: ", mary, "Adam: ", adam)
+
+total_apple =  john + mary + adam
+print("total_apple: ", total_apple )
+
+
+# 2.4.1.9 Variables - data-shaped boxes: LAB
+kilometers = 12.25
+miles = 7.38
+
+miles_to_kilometers = miles *1.61
+kilometers_to_miles = kilometers / 1.61
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+
