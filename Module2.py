@@ -174,6 +174,13 @@ print(+2)
 # 2.3.1.7 Operators and their priorities
 print(9 % 6 % 2)
 
+# 2.3.1.8 Operators and their bindings: exponentiation
+print(2 ** 2 ** 3)
+
+# 2.3.1.9 List of priorities
+print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
+
+((25%13) + 100)/(2*13)
 
 
 print(17%3)
