@@ -124,3 +124,59 @@ print(True < False)
 print('"I\'m"')
 print('""learning""')
 print('"""Python"""')
+
+# 2.3.1.1 Operators - data manipulation tools: Python as a calculator
+print(2+2)
+
+# Arithmetic operators: exponentiation
+print(2 ** 3)
+print(2 ** 3.)
+print(2. ** 3)
+print(2. ** 3.)
+
+# 2.3.1.3 Arithmetic operators: multiplication
+print(2 * 3)
+print(2 * 3.)
+print(2. * 3)
+print(2. * 3.)
+
+print(6 / 3)
+print(6 / 3.)
+print(6. / 3)
+print(6. / 3.)
+
+# 2.3.1.4 Arithmetic operators: integer division
+print(6 // 3)
+print(6 // 3.)
+print(6. // 3)
+print(6. // 3.)
+
+print(6 // 4)
+print(6. // 4)
+
+print(-6 // 4)
+print(6. // -4)
+
+# 2.3.1.5 Operators: remainder (modulo)
+print(14 % 4)
+
+print(12 % 4.5)
+
+# 2.3.1.6 Operators: The subtraction operator, unary and binary operators
+print(-4. + 8)
+
+print(-4 - 4)
+print(4. - 8)
+print(-1.1)
+
+print(+2)
+
+# 2.3.1.7 Operators and their priorities
+print(9 % 6 % 2)
+
+
+
+print(17%3)
+print(14%3.5)
+
+print(10%7%2)
