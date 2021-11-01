@@ -267,3 +267,54 @@ leg_a = float(input("Input first leg length: "))
 leg_b = float(input("Input second leg length: "))
 print("Hypotenuse length is", (leg_a**2 + leg_b**2) ** .5)
 
+
+# 2.6.1.6 How to talk to a computer: string operators
+fnam = input("May I have your first name, please? ")
+lnam = input("May I have your last name, please? ")
+print("Thank you.")
+print("\nYour name is " + fnam + " " + lnam + ".")
+
+# 2.6.1.7 How to talk to a computer: Replication
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|\n") * 5, end="")
+print("+" + 10 * "-" + "+")
+
+
+# 2.6.1.8 How to talk to a computer: string operators
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+print("Hypotenuse length is " + str((leg_a**2 + leg_b**2) ** .5))
+
+
+# 2.6.1.9 LAB: Simple input and output
+# input a float value for variable a here
+a = float(input("input a float value for variable a here: "))
+
+# input a float value for variable b here
+b = float(input("input b float value for variable a here: "))
+
+
+# output the result of addition here
+print("the addition is:", a + b)
+
+# output the result of subtraction here
+print("the subtraction is:", a - b)
+
+# output the result of multiplication here
+print("the multiplication is:", a * b)
+
+# output the result of division here
+print("the division is:", a / b)
+
+print("\nThat's all, folks!")
+
+# 2.6.1.10 LAB: Operators and expressions
+x = float(input("Enter value for x: "))
+
+# Write your code here.
+x1 = x + 1 / x
+x2 = x + 1 / x1
+x3 = x + 1 / x2
+y  = 1 / x3 
+
+print("y =", y)
