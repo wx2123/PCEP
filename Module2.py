@@ -246,3 +246,24 @@ print("Seconds in Hours: ", a * seconds) # printing the number of seconds in a g
 print("Goodbye")
 #here we should also print "Goodbye", but a programmer didn't have time to write any code
 #this is the end of the program that computes the number of seconds in 3 hour
+
+# 2.6.1.1 How to talk to a computer: The input() function
+print("Tell me anything...")
+anything = input()
+print("Hmm...", anything, "... Really?")
+
+# 2.6.1.1 How to talk to a computer: The input() function with an argument
+anything = input("Tell me anything...")
+print("Hmm...", anything, "...Really?")
+
+
+# 2.6.1.4 How to talk to a computer: Type casting
+anything = float(input("Enter a number: "))
+something = anything ** 2.0
+print(anything, "to the power of 2 is", something)
+
+# 2.6.1.5 How to talk to a computer: More about input() and type casting
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+print("Hypotenuse length is", (leg_a**2 + leg_b**2) ** .5)
+
