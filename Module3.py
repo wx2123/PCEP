@@ -181,3 +181,35 @@ print("Odd numbers count:", odd_numbers)
 print("Even numbers count:", even_numbers)
 
 
+# 3.2.1.3 LAB: Essentials of the while loop - Guess the secret number
+secret_number = 777
+
+print(
+"""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
++================================+
+""")
+
+# Input a number
+number = int(input("Enter a number: "))
+
+# If the number is not equal to -1, continue.
+while number != secret_number:
+    # If the number chosen by the user is different than the magician's secret number
+    print("Ha ha! You're stuck in my loop!")
+    number = int(input("Enter a number again: "))
+
+# Print the largest number.
+print("Well done, muggle! You are free now.")
+
+
+power = 1
+for expo in range(16):
+    print("2 to the power of", expo, "is", power)
+    power *= 2
+
