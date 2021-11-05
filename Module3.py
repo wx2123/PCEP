@@ -226,3 +226,90 @@ import time
 for i in range(1,6):
     print(i,"Mississippi")
     time.sleep(1)
+
+# 3.2.1.7 Loop control in Python | break and continue
+# break - example
+print("The break instruction:")
+for i in range(1, 6):
+    if i == 3:
+        break
+    print("Inside the loop.", i)
+print("Outside the loop.")
+
+# continue - example
+print("\nThe continue instruction:")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print("Inside the loop.", i)
+print("Outside the loop.")    
+    
+# 3.2.1.8 Loop control in Python | break and continue
+
+# break
+largest_number = -99999999
+counter = 0
+
+while True:
+    number = int(input("Enter a number or type -1 to end program: "))
+    if number == -1:
+        break
+    counter += 1
+    if number > largest_number:
+        largest_number = number
+
+if counter != 0:
+    print("The largest number is", largest_number)
+else:
+    print("You haven't entered any number.")
+
+# continue    
+largest_number = -99999999
+counter = 0
+
+number = int(input("Enter a number or type -1 to end program: "))
+
+while number != -1:
+    if number == -1:
+        continue
+    counter += 1
+
+    if number > largest_number:
+        largest_number = number
+    number = int(input("Enter a number or type -1 to end program: "))
+
+if counter:
+    print("The largest number is", largest_number)
+else:
+    print("You haven't entered any number.")
+
+# 3.2.1.9 LAB: The break statement - Stuck in a loop
+secret_word = "chupacabra"
+
+# Input a word
+number = input("Enter a word: ")
+
+# If the number is not equal to -1, continue.
+while number != secret_word:
+    # If the number chosen by the user is different than the magician's secret number
+    print("Ha ha! You're stuck in my loop!")
+    number = input("Enter a word again: ")
+
+# Print the largest number.
+print("You've successfully left the loop.")    
+
+# 3.2.1.10 LAB: The continue statement - the Ugly Vowel Eater
+# Prompt the user to enter a word
+# and assign it to the user_word variable.
+
+user_word = input("Enter a word: ")
+user_word = user_word.upper()
+
+for letter in user_word:
+    # Complete the body of the for loop.
+    if letter == "A" : continue
+    elif  letter == "E": continue
+    elif  letter == "I": continue
+    elif  letter == "O": continue
+    elif  letter == "U": continue
+    print(letter)
