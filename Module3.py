@@ -334,3 +334,170 @@ for letter in user_word:
 
 # Print the word assigned to word_without_vowels.
 print(word_without_vowels)
+
+
+# 3.2.1.12 Python loops | else
+i = 1
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("else:", i)
+    
+
+# 3.2.1.13 Python loops | else
+    
+for i in range(5):
+    print(i)
+else:
+    print("else:", i)
+    
+    
+i = 111
+for i in range(2, 1):
+    print(i)
+else:
+    print("else:", i)
+    
+    
+# 3.2.1.14 LAB: Essentials of the while loop
+  
+blocks = int(input("Enter the blocks : "))
+
+i=1
+layer=1
+height=0
+
+while i < blocks + 1:
+    height += layer
+    if height > blocks:
+        print(layer-1)
+        break
+    i += 1
+    layer += 1
+    
+
+# 3.2.1.15 LAB: Collatz's hypothesis
+
+c0 = int(input("Enter the c0 : "))
+
+i = 0
+while c0 != 1.0:
+    if c0 % 2 == 0 : c0 = c0/2
+    else: c0 = 3 * c0 + 1
+    print(c0)
+    i += 1
+print('steps=',i)
+
+
+# 3.2.1.16 SECTION SUMMARY (1/2)
+
+# Example 1
+while True:
+    print("Stuck in an infinite loop.")
+
+# Example 2
+counter = 5
+while counter > 2:
+    print(counter)
+    counter -= 1
+
+# Example 1
+word = "Python"
+for letter in word:
+    print(letter, end="*")
+
+# Example 2
+for i in range(1, 10):
+    if i % 2 == 0:
+        print(i)
+
+text = "OpenEDG Python Institute"
+for letter in text:
+    if letter == "P":
+        break
+    print(letter, end="")
+
+text = "pyxpyxpyx"
+for letter in text:
+    if letter == "x":
+        continue
+    print(letter, end="")
+
+# 3
+n = 0
+
+while n != 3:
+    print(n)
+    n += 1
+else:
+    print(n, "else")
+
+print()
+
+for i in range(0, 3):
+    print(i)
+else:
+    print(i, "else")
+
+# 4
+for i in range(3):
+    print(i, end=" ")  # Outputs: 0 1 2
+
+for i in range(6, 1, -2):
+    print(i, end=" ")  # Outputs: 6, 4, 2
+
+# 3.2.1.17 SECTION SUMMARY (2/2)
+"""
+Exercise 1
+Create a for loop that counts from 0 to 10, 
+and prints odd numbers to the screen. Use the skeleton below:
+"""
+for i in range(1, 11):
+    if i % 2 != 0:   print(i)
+    
+"""
+Exercise 2
+Create a while loop that counts from 0 to 10,
+ and prints odd numbers to the screen. Use the skeleton below:
+"""
+
+x = 1
+while x < 11:
+    if x % 2 != 0:   
+        print(x)
+    x += 1
+    
+"""
+Exercise 3
+Create a program with a for loop and a break statement. 
+The program should iterate over characters in an email address, 
+exit the loop when it reaches the @ symbol, 
+and print the part before @ on one line. Use the skeleton below:
+"""    
+for ch in "john.smith@pythoninstitute.org":
+    if ch == "@":
+        break
+    print(ch, end="")
+    
+"""
+Exercise 4
+Create a program with a for loop and a continue statement. 
+The program should iterate over a string of digits, 
+replace each 0 with x, and print the modified string to the screen. 
+Use the skeleton below:
+"""
+for digit in "0165031806510":
+    if digit == "0":
+        print("x", end="")
+        continue
+    print(digit, end="")
+
+    
+"""
+Exercise 5
+Create a program with a for loop and a continue statement. 
+The program should iterate over a string of digits, 
+replace each 0 with x, and print the modified string to the screen. 
+Use the skeleton below:
+"""
