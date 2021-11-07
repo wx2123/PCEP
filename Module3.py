@@ -501,3 +501,20 @@ The program should iterate over a string of digits,
 replace each 0 with x, and print the modified string to the screen. 
 Use the skeleton below:
 """
+
+# 3.3.1.2 Logic and bit operations in Python | and, or, not
+
+# Example 1:
+var = 1
+print(var > 0)
+print(not (var <= 0))
+
+
+# Example 2:
+print(var != 0)
+print(not (var == 0))
+
+
+i = 1
+j = not not i
+print(j)
