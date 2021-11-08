@@ -624,3 +624,66 @@ print("New list's length:", len(numbers))  # Printing new list length.
 print("\nNew list content:", numbers)  # Printing current list content.
 
 ###
+
+
+# 3.4.1.5 Lists - collections of data | Operations on lists
+numbers = [111, 7, 2, 1]
+print(numbers[-1])
+print(numbers[-2])
+print(numbers[-4])
+
+# 3.4.1.6 LAB: The basics of lists
+hat_list = [1, 2, 3, 4, 5]  # This is an existing list of numbers hidden in the hat.
+
+# Step 1: write a line of code that prompts the user
+# to replace the middle number with an integer number entered by the user.
+number = int(input("Enter a number : "))
+
+hat_list[2] = number
+
+# Step 2: write a line of code that removes the last element from the list.
+del hat_list[4]
+
+# Step 3: write a line of code that prints the length of the existing list.
+print(len(hat_list))
+
+print(hat_list)
+
+# 3.4.1.8 Lists - collections of data | list methods
+numbers = [111, 7, 2, 1]
+print(len(numbers))
+print(numbers)
+
+###
+
+numbers.append(4)
+
+print(len(numbers))
+print(numbers)
+
+###
+
+numbers.insert(0, 222)
+print(len(numbers))
+print(numbers)
+
+#
+
+numbers.insert(1, 333)
+print(len(numbers))
+print(numbers)
+
+# 3.4.1.9 Lists - collections of data | list methods
+my_list = []  # Creating an empty list.
+for i in range(5):
+    my_list.append(i + 1)
+
+print(my_list)
+
+
+my_list2 = []  # Creating an empty list.
+
+for j in range(5):
+    my_list2.insert(0, j + 1)
+
+print(my_list2)
