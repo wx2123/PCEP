@@ -518,3 +518,58 @@ print(not (var == 0))
 i = 1
 j = not not i
 print(j)
+
+
+x = 3
+y = 7
+
+if (y > 1 and y > x) : print("y is greater than 1 AND x")
+
+z = x & y
+print(z)
+
+# 3.3.1.5 Logic and bit operations in Python | Bit shifting
+var = 17
+var_right = var >> 1
+var_left = var << 2
+print(var, var_left, var_right)
+
+
+# 3.3.1.6 SECTION SUMMARY
+
+#Exercise 1
+#What is the output of the following snippet?
+
+x = 1
+y = 0
+
+z = ((x == y) and (x == y)) or not(x == y)
+print(not(z))
+
+#Exercise 2
+#What is the output of the following snippet?
+
+x = 4
+y = 1
+
+a = x & y
+b = x | y
+c = ~x  # tricky!
+d = x ^ 5
+e = x >> 2
+f = x << 2
+
+print(a, b, c, d, e, f)
+
+
+x = 4
+y = 1
+
+a = x & y
+b = x | y
+c = ~x
+d = x ^ 5
+e = x >> 2
+f = x << 2
+
+print(a, b, c, d, e, f)
