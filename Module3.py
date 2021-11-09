@@ -687,3 +687,40 @@ for j in range(5):
     my_list2.insert(0, j + 1)
 
 print(my_list2)
+
+
+# 3.4.1.10 Lists - collections of data | lists and loops
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in range(len(my_list)):
+    total += my_list[i]
+
+print(total)
+
+
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in my_list:
+    total += i
+
+print(total)
+
+# 3.4.1.11 Lists - collections of data | lists and loops
+variable_1 = 1
+variable_2 = 2
+
+variable_1, variable_2 = variable_2, variable_1
+print(variable_1,variable_2)
+
+# 3.4.1.12 Lists - collections of data | lists and loops
+my_list = [10, 1, 8, 3, 5]
+length = len(my_list)
+
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
+
+print(my_list)
+
+
