@@ -884,3 +884,86 @@ twos
 
 odds = [x for x in squares if x % 2 != 0 ]
 odds
+
+
+# 3.7.1.3 Lists in advanced applications | Arrays
+EMPTY = "-"
+ROOK = "ROOK"
+board = []
+
+for i in range(8):
+    row = [EMPTY for i in range(8)]
+    board.append(row)
+
+board[0][0] = ROOK
+board[0][7] = ROOK
+board[7][0] = ROOK
+board[7][7] = ROOK
+
+print(board)
+
+
+temps = [[0.0 for h in range(24)] for d in range(31)]
+
+
+# 3.7.1.6 SECTION SUMMARY
+table = [[":(", ":)", ":(", ":)"],
+         [":)", ":(", ":)", ":)"],
+         [":(", ":)", ":)", ":("],
+         [":)", ":)", ":)", ":("]]
+
+print(table)
+print(table[0][0])  # outputs: ':('
+print(table[0][3])  # outputs: ':)'
+
+
+
+# Module 3 quiz
+nums =  []
+vals = nums
+vals.append(5)
+print(len(nums))
+print(len(vals))
+
+
+nums =  []
+vals = nums[:]
+vals.append(5)
+print(len(nums))
+print(len(vals))
+
+
+# Module 3 test
+# 1
+vals = [0,1,2]
+vals.insert(0,1)
+del vals[1]
+vals
+
+
+# 9
+z =10
+y = 0
+x = y < z and z > y or y > z and z < y
+x
+
+# 15
+my_list = [[0,1,2,3] for i in range(2)]
+print(my_list[2][0])
+
+# 18
+my_list = [1,2,3,4]
+print(my_list[-3:-2])
+
+
+var = 1
+while var < 10:
+    print("#")
+    var = var << 1
+    
+    
+for i in range(1):
+    print("#")
+else:
+    print("#")
+    
