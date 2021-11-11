@@ -858,3 +858,29 @@ for number in bets:
 print(hits)
 
 
+# 3.6.1.9 LAB: Operating with lists - basics
+
+# https://www.youtube.com/watch?v=pKccpZujYqU
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+#
+# Write your code here.
+#
+new_list = []
+for i in my_list:
+    if  i not in new_list:
+        new_list.append(i)
+        
+print("The list with unique elements only:")
+print(my_list)
+print(new_list)
+
+
+# 3.7.1.1 Lists in advanced applications
+squares = [x ** 2 for x in range(10)]
+squares
+
+twos = [2 ** i for i in range(8)]
+twos
+
+odds = [x for x in squares if x % 2 != 0 ]
+odds
