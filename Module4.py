@@ -31,3 +31,31 @@ def message(what, number):
 message("telephone", 11)
 message("price", 5)
 message("number", "number")
+
+# 4.2.1.4 How functions communicate with their environment
+
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
+
+introduction("Skywalker", "Luke")
+introduction("Quick", "Jesse")
+introduction("Kent", "Clark")
+
+# 4.2.1.5 Keyword argument passing
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
+introduction(first_name = "James", last_name = "Bond")
+introduction(last_name = "Skywalker", first_name = "Luke")
+
+# 4.2.1.7 How functions communicate with their environment
+def introduction(first_name, last_name="Smith"):
+    print("Hello, my name is", first_name, last_name)
+
+# Call the function here.
+introduction("James", "Doe")
+introduction("Henry")
+introduction(first_name="William")
+
+def introduction(first_name="John", last_name="Smith"):
+    print("Hello, my name is", first_name, last_name)
+introduction()
