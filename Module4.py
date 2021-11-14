@@ -90,3 +90,17 @@ def boring_function():
 print("This lesson is interesting!")
 boring_function()
 print("This lesson is boring...")
+
+
+# 4.3.1.2 Returning a result from a function
+value = None
+if value is None:
+    print("Sorry, you don't carry any value")
+
+# 4.3.1.3 Returning a result from a function
+def strange_function(n):
+    if(n % 2 == 0):
+        return True
+    
+print(strange_function(2))
+print(strange_function(1))
