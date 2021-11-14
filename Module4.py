@@ -104,3 +104,48 @@ def strange_function(n):
     
 print(strange_function(2))
 print(strange_function(1))
+
+
+# 4.3.1.4 Returning a result from a function
+def list_sum(lst):
+    s = 0
+    
+    for elem in lst:
+        s += elem
+    
+    return s
+print(list_sum([5, 4, 3]))
+
+# print(list_sum(5))
+
+
+def strange_list_fun(n):
+    strange_list = []
+    
+    for i in range(0, n):
+        strange_list.insert(0, i)
+    
+    return strange_list
+
+print(strange_list_fun(5))
+
+
+
+# 4.3.1.6 LAB: A leap year: writing your own functions
+def is_year_leap(year):
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+#    if (year % 4 == 0) and (year % 100) != 0: 
+#        return True
+#
+# put your code here
+#
+test_data = [1900, 2000, 2016, 1987]
+test_results = [False, True, True, False]
+for i in range(len(test_data)):
+	yr = test_data[i]
+	print(yr,"->",end="")
+	result = is_year_leap(yr)
+	if result == test_results[i]:
+		print("OK")
+	else:
+		print("Failed")
