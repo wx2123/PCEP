@@ -59,3 +59,34 @@ introduction(first_name="William")
 def introduction(first_name="John", last_name="Smith"):
     print("Hello, my name is", first_name, last_name)
 introduction()
+
+
+# 4.3.1.1 Returning a result from a function
+def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+    
+    print("Happy New Year!")
+
+happy_new_year()
+happy_new_year(False)
+
+
+def boring_function():
+    return 123
+
+x = boring_function()
+
+print("The boring_function has returned its result. It's:", x)
+
+
+def boring_function():
+    print("'Boredom Mode' ON.")
+    return 123
+
+print("This lesson is interesting!")
+boring_function()
+print("This lesson is boring...")
