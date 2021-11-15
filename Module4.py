@@ -188,5 +188,87 @@ for i in range(len(test_years)):
 	else:
 		print("Failed")    
     
+# 4.3.1.8 LAB: Day of the year: writing and using your own functions
+def is_year_leap(year):
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+#
+# Your code from LAB 4.3.1.6.
+#
+
+def days_in_month(year, month):
+    if month in [1, 3, 5, 7, 8, 10, 12]:
+        return 31
+    elif month==2:
+        if is_year_leap(year):
+            return 29
+        else:
+            return 28
+    elif month in [4,6,8,9,11]:
+        return 30
+    else:
+        return None
+#
+# Your code from LAB 4.3.1.7.
+#
+
+def day_of_year(year, month, day):
+#    if is_year_leap(year) == True :return 366
+#    else: return 365
     
+    total = 0  # initializing the total variable to add results
+    # create loop to add only days in the months before the month in the input/test data
+    for i in range(1, month):
+        result = days_in_month(year, i)
+        total += result
+    day_num = total + day  # add the value of the day argument to get day of the year
+    return day_num
+#
+# Write your new code here.
+#
+
+print(day_of_year(2000, 12, 31))
+print(day_of_year(1999, 12, 31))
+print(day_of_year(2021, 7, 29))    
+
+
+# 4.3.1.9 LAB: Prime numbers - how to find them
+def is_prime(num):
+# Write your code here.
+    if num < 2:
+        return False
+    elif num == 2:
+        return True  
+    for n in range(2, num):
+        if num % n ==0:
+            return False
+    return True
+
+for i in range(1, 30):
+	if is_prime(i + 1):
+			print(i + 1, end=" ")
+print()
     
+# 4.3.1.10 LAB: Converting fuel consumption
+def liters_100km_to_miles_gallon(liters):
+#    return (gallon) *(1.609344 * 100/ 3.785411784)
+    
+    gallon = 3.785411784 * liters
+    mile   = 100 / 1.609344 
+    return gallon/mile
+
+    
+#
+# Write your code here.
+#
+
+#def miles_gallon_to_liters_100km(miles):
+#
+# Write your code here
+#
+
+print(liters_100km_to_miles_gallon(3.9))
+print(liters_100km_to_miles_gallon(7.5))
+print(liters_100km_to_miles_gallon(10.))
+print(miles_gallon_to_liters_100km(60.3))
+print(miles_gallon_to_liters_100km(31.4))
+print(miles_gallon_to_liters_100km(23.5))
