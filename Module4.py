@@ -271,3 +271,73 @@ print(liters_100km_to_miles_gallon(10.))
 print(miles_gallon_to_liters_100km(60.3))
 print(miles_gallon_to_liters_100km(31.4))
 print(miles_gallon_to_liters_100km(23.5))
+
+
+# 4.3.1.11 SECTION SUMMARY
+
+# Example 1
+def wishes():
+    print("My Wishes")
+    return "Happy Birthday"
+
+wishes()    # outputs: My Wishes
+
+
+# Example 2
+def wishes():
+    print("My Wishes")
+    return "Happy Birthday"
+
+print(wishes())
+
+# outputs: My Wishes
+#          Happy Birthday
+
+def hi_everybody(my_list):
+    for name in my_list:
+        print("Hi,", name)
+hi_everybody(["Adam", "John", "Lucy"])
+
+def create_list(n):
+    my_list = []
+    for i in range(n):
+        my_list.append(i)
+    return my_list
+
+print(create_list(5))
+
+# Exercise 1
+def hi():
+    return
+    print("Hi!")
+
+hi()
+
+# Exercise 2
+def is_int(data):
+    if type(data) == int:
+        return True
+    elif type(data) == float:
+        return False
+
+print(is_int(5))
+print(is_int(5.0))
+print(is_int("5"))
+
+# 4.4.1.2 Scopes in Python
+def my_function():
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+
+def my_function():
+    var = 2
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+
+
