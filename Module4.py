@@ -250,18 +250,17 @@ print()
     
 # 4.3.1.10 LAB: Converting fuel consumption
 def liters_100km_to_miles_gallon(liters):
-#    return (gallon) *(1.609344 * 100/ 3.785411784)
-    
-    gallon = 3.785411784 * liters
-    mile   = 100 / 1.609344 
-    return gallon/mile
-
-    
+    gallon = liters / 3.785411784  
+    mile   = 100/ 1.609344 
+    return mile/gallon    
 #
 # Write your code here.
 #
 
-#def miles_gallon_to_liters_100km(miles):
+def miles_gallon_to_liters_100km(miles):
+    km = miles * 1.609344
+    liters = 3.785411784
+    return 100 * liters/ km
 #
 # Write your code here
 #
