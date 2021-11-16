@@ -351,3 +351,61 @@ var = 1
 my_function()
 print(var)
 
+# 4.5.1.2 Creating functions | two-parameter functions
+def ft_and_inch_to_m(ft, inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+
+
+def lb_to_kg(lb):
+    return lb * 0.45359237
+
+
+def bmi(weight, height):
+    if height < 1.0 or height > 2.5 or weight < 20 or weight > 200:
+        return None
+    
+    return weight / height ** 2
+
+
+print(bmi(weight = lb_to_kg(176), height = ft_and_inch_to_m(5, 7)))
+
+# 4.5.1.3 Creating functions | three-parameter functions
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+print(is_a_triangle(1, 1, 1))
+print(is_a_triangle(1, 1, 3))
+
+# 4.5.1.4 Creating functions | testing triangles
+
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+
+
+a = float(input('Enter the first side\'s length: '))
+b = float(input('Enter the second side\'s length: '))
+c = float(input('Enter the third side\'s length: '))
+
+if is_a_triangle(a, b, c):
+    print('Yes, it can be a triangle.')
+else:
+    print('No, it can\'t be a triangle.')
+
+
+
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+
+
+def is_a_right_triangle(a, b, c):
+    if not is_a_triangle(a, b, c):
+        return False
+    if c > a and c > b:
+        return c ** 2 == a ** 2 + b ** 2
+    if a > b and a > c:
+        return a ** 2 == b ** 2 + c ** 2
+
+
+print(is_a_right_triangle(5, 3, 4))
+print(is_a_right_triangle(1, 3, 4))
+print(is_a_right_triangle(3, 5, 4))
+
