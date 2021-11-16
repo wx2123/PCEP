@@ -341,3 +341,13 @@ my_function()
 print(var)
 
 
+# 4.4.1.3 Scopes in Python | global
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+
