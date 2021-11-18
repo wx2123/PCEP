@@ -464,4 +464,64 @@ def fib(n):
 for n in range(1, 10):  # testing
     print(n, "->", fib(n))
 
+# 4.5.1.8 Creating functions | recursion
 
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+
+def factorial_function(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+    return n * factorial_function(n - 1)
+
+def fib(n):
+    if n < 1:
+         return None
+    if n < 3:
+        return 1
+
+    elem_1 = elem_2 = 1
+    the_sum = 0
+    for i in range(3, n + 1):
+        the_sum = elem_1 + elem_2
+        elem_1, elem_2 = elem_2, the_sum
+    return the_sum
+
+
+for n in range(1, 10):
+    print(n, "->", fib(n))
+
+# 4.5.1.9 SECTION SUMMARY
+
+# Recursive implementation of the factorial function.
+
+def factorial(n):
+    if n == 1:    # The base case (termination condition.)
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+print(factorial(4)) # 4 * 3 * 2 * 1 = 24
+
+
+# 4.6.1.1 Tuples and dictionaries
+one_element_tuple_1 = (1, )
+one_element_tuple_2 = 1.,
+
+# 4.6.1.2 Tuples and dictionaries
+my_tuple = (1, 10, 100, 1000)
+
+print(my_tuple[0])
+print(my_tuple[-1])
+print(my_tuple[1:])
+print(my_tuple[:-2])
+
+for elem in my_tuple:
+    print(elem)
