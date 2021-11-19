@@ -525,3 +525,54 @@ print(my_tuple[:-2])
 
 for elem in my_tuple:
     print(elem)
+    
+    
+# 4.6.1.3 Tuples and dictionaries
+my_tuple = (1, 10, 100)
+
+t1 = my_tuple + (1000, 10000)
+t2 = my_tuple * 3
+
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in my_tuple)
+print(-10 not in my_tuple)
+
+
+var = 123
+t1 = (1, )
+t2 = (2, )
+t3 = (3, var)
+t1, t2, t3 = t2, t3, t1
+print(t1, t2, t3)
+
+
+# 4.6.1.5 Tuples and dictionaries
+
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+words = ['cat', 'lion', 'horse']
+
+for word in words:
+    if word in dictionary:
+        print(word, "->", dictionary[word])
+    else:
+        print(word, "is not in dictionary")
+
+
+# 4.6.1.6 Tuples and dictionaries | methods
+
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
+for key in sorted(dictionary.keys()):
+    print(key, "->", dictionary[key])
+    
+# 4.6.1.7 Tuples and dictionaries | methods  
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
+for english, french in dictionary.items():
+    print(english, "->", french)
+    
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+for french in dictionary.values():
+    print(french)
