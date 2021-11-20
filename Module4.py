@@ -625,3 +625,100 @@ for name in sorted(school_class.keys()):
         adding += score
         counter += 1
     print(name, ":", adding / counter)
+    
+    
+# 4.6.1.10 SECTION SUMMARY (1/3)
+   
+# Example 1
+tuple_1 = (1, 2, 3)
+for elem in tuple_1:
+    print(elem)
+
+# Example 2
+tuple_2 = (1, 2, 3, 4)
+print(5 in tuple_2)
+print(5 not in tuple_2)
+
+# Example 3
+tuple_3 = (1, 2, 3, 5)
+print(len(tuple_3))
+
+# Example 4
+tuple_4 = tuple_1 + tuple_2
+tuple_5 = tuple_3 * 2
+
+print(tuple_4)
+print(tuple_5)
+
+
+my_tuple = tuple((1, 2, "string"))
+print(my_tuple)
+
+my_list = [2, 4, 6]
+print(my_list)    # outputs: [2, 4, 6]
+print(type(my_list))    # outputs: <class 'list'>
+tup = tuple(my_list)
+print(tup)    # outputs: (2, 4, 6)
+print(type(tup))    # outputs: <class 'tuple'>
+
+
+# 4.6.1.11 SECTION SUMMARY (2/3)
+
+pol_eng_dictionary = {
+    "zamek": "castle",
+    "woda": "water",
+    "gleba": "soil"
+    }
+
+for key, value in pol_eng_dictionary.items():
+    print("Pol/Eng ->", key, ":", value)
+
+
+
+#Exercise 3
+
+# Complete the code to correctly use the count() method to 
+# find the number of duplicates of 2 in the following tuple.
+
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+tup
+duplicates = tup.count(2)# Write your code here.
+
+print(duplicates)    # outputs: 4
+
+
+
+#Exercise 4
+
+# Write a program that will "glue" the two dictionaries (d1 and d2) together
+# and create a new one (d3).
+
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+
+for item in (d1, d2):
+    # Write your code here.
+    d3.update(item)
+
+print(d3)
+
+# Exercise 5
+# Write a program that will convert the my_list list to a tuple.
+
+my_list = ["car", "Ford", "flower", "Tulip"]
+
+t = tuple(my_list)  
+# Write your code here.
+print(t)
+
+
+# Exercise 6
+
+# Write a program that will convert the colors tuple to a dictionary.
+
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+
+# Write your code here.
+colors_dictionary = dict(colors)
+print(colors_dictionary)
