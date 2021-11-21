@@ -734,3 +734,24 @@ except ValueError:
     print('I do not know what to do.')    
 except ZeroDivisionError:
     print('Division by zero is not allowed in our Universe.') 
+
+
+import math
+math.sqrt(9)
+math.sqrt(-3)
+
+
+short_list = [1]
+short_list.append(2)
+short_list.depend(3)
+
+# 4.7.1.8 Testing and debugging
+
+temperature = float(input('Enter current temperature:'))
+
+if temperature > 0:
+    print("Above zero")
+elif temperature < 0:
+    print("Below zero")
+else:
+    print("Zero")
