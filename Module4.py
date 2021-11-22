@@ -755,3 +755,42 @@ elif temperature < 0:
     print("Below zero")
 else:
     print("Zero")
+
+
+# 4.7.2.1 PROJECT: Tic-Tac-Toe
+
+def display_board(board):
+    # The function accepts one parameter containing the board's current status
+    # and prints it out to the console.
+
+
+def enter_move(board):
+    # The function accepts the board's current status, asks the user about their move, 
+    # checks the input, and updates the board according to the user's decision.
+
+
+def make_list_of_free_fields(board):
+    # The function browses the board and builds a list of all the free squares; 
+    # the list consists of tuples, while each tuple is a pair of row and column numbers.
+
+
+def victory_for(board, sign):
+    # The function analyzes the board's status in order to check if 
+    # the player using 'O's or 'X's has won the game
+
+
+def draw_move(board):
+    # The function draws the computer's move and updates the board.
+
+
+# PE1 module 4 quiz
+tup = (1,) + (1,)
+tup = tup + tup
+print(len(tup))
+
+tup = (1,)
+len(tup)
+
+10/0
+value = input("enter a value: ")
+print(10/value)
