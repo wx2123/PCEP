@@ -794,3 +794,70 @@ len(tup)
 10/0
 value = input("enter a value: ")
 print(10/value)
+
+
+
+# module 4 test
+
+# Q3
+
+def fun(x):
+    if x % 2 == 0:
+        return 1
+    else:
+        return
+    
+print(fun(fun(2))+1)
+
+# Q6
+tup = (1,2,4,8)
+tup = tup[1:-1]
+tup = tup[0]
+print(tup)
+
+# Q7 
+def any():
+    print(var + 1, end='')
+    
+var =1
+a= any()
+print(a)
+print(var)
+
+# Q8
+my_list = ['Mary', 'had', 'a', 'little', 'lamb']
+
+def my_list(my_list):
+    del my_list[3]
+    my_list[3] = 'ram'
+
+print(my_list(my_list))
+
+# Q11
+try:
+    # value=int(input('enter a value: '))
+    value=input('enter a value: ')
+    print(value/value)
+except ValueError:
+    print("Bad input...")
+except ZeroDivisionError:
+    print("Very bad input...")
+except TypeError:
+    print("Very very bad input...")
+except:
+    print("Booo!")
+
+# Q20
+
+dictionary = {}
+my_list = ['a', 'b', 'c', 'd']
+
+for i in range(len(my_list) - 1):
+    dictionary[my_list[i]] = (my_list[i],)
+
+for i in sorted(dictionary.keys()):
+    k = dictionary[i]
+    #print(k[0])
+    print(k)
+
+
