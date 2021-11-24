@@ -800,7 +800,6 @@ print(10/value)
 # module 4 test
 
 # Q3
-
 def fun(x):
     if x % 2 == 0:
         return 1
@@ -848,7 +847,6 @@ except:
     print("Booo!")
 
 # Q20
-
 dictionary = {}
 my_list = ['a', 'b', 'c', 'd']
 
