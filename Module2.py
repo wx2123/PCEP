@@ -54,6 +54,9 @@ print("Monty Python.")
 print("My name is ", end="")
 print("Monty Python.")
 
+print("My name is ", end="tttttttttttt")
+print("Monty Python.")
+
 # 2.1.1.16 Your very first program: The print() function – the keyword arguments
 print("My", "name", "is", "Monty", "Python.", sep="-")
 print("My", "name", "is", "Monty", "Python.", sep="**")
