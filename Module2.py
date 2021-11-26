@@ -110,6 +110,7 @@ print(0x123) # 十六进制291
 
 # 2.2.1.7 Python literals: Coding floats
 print(0.0000000000000000000001)
+6.62607E-34
 
 # 2.2.1.8 Python literals: Strings
 print("I like \"Monty Python\"")
@@ -120,7 +121,7 @@ print('I\'m Monty Python')
 print("I'm Monty Python")
 
 # 2.2.1.10 Python literals: Boolean values
-print(True > False)
+print(True > False) 
 print(True < False)
 
 # 2.2.1.11 LAB: Python literals - strings
