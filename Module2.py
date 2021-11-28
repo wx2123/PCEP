@@ -238,6 +238,15 @@ y = 3 * x ** 3 - 2 * x ** 2 + 3 * x -1
 # write your code here
 print("y =", y)
 
+# 2.4.1.11 SECTION SUMMARY
+
+
+a = 6
+b = 3
+a /= 2 * b
+print(a)
+
+
 # 2.5.1.2 LAB: Comments
 # this program computes the number of seconds in a given number of hours
 # this program has been written two days ago

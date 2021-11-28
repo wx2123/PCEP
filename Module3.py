@@ -17,6 +17,10 @@ print(var != 0)
 var = 1  # Assigning 1 to var
 print(var != 0)
 
+# 3.1.1.3 Making decisions in Python
+n = int(input("please enter a number: "))
+print(n >= 100)
+
 
 # 
 # Read two numbers
@@ -87,6 +91,15 @@ x = input()
 if (x == 'Spathiphyllum'): print("Yes - Spathiphyllum is the best plant ever")
 elif (x == 'spathiphyllum'): print("No, I want a big Spathiphyllum!")
 else : print("Spathiphyllum! Not", x)
+
+
+n = input("enter a plant name: ")
+if n == "Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever!")
+elif n == "spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+else :
+    print("Spathiphyllum! Not", n)
 
 # 3.1.1.11 LAB: Essentials of the if-else statement
 
