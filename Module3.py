@@ -226,6 +226,20 @@ for expo in range(16):
     print("2 to the power of", expo, "is", power)
     power *= 2
 
+# 3.2.1.4 Loops in Python | for
+for i in range(10):
+    print("The value of i is currently", i)
+
+
+# 3.2.1.5 Loops in Python | for
+
+power = 1
+for expo in range(16):
+    print("2 to the power of", expo, "is", power)
+    power *= 2
+
+
+
 
 # 3.2.1.6 LAB: Essentials of the for loop - counting mississippily
 import time
