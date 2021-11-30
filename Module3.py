@@ -343,6 +343,8 @@ for letter in user_word:
     print(letter)
 
 
+
+
 # 3.2.1.11 LAB: The continue statement - the Pretty Vowel Eater
 user_word = input("Enter a word: ")
 word_without_vowels = ""
