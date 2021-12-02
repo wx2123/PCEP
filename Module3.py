@@ -401,7 +401,7 @@ height=0
 while i < blocks + 1:
     height += layer
     if height > blocks:
-        print(layer-1)
+        print("he height of the pyramid:", layer-1)
         break
     i += 1
     layer += 1
@@ -544,11 +544,30 @@ print(not (var <= 0))
 print(var != 0)
 print(not (var == 0))
 
-
 i = 1
 j = not not i
-print(j)
+print(j) # True
 
+
+i = 0
+j = not not i
+print(j) # False
+
+
+
+#3.3.1.3 Logic and bit operations in Python
+i = 15
+j = 22
+log = i and j  # 22
+bit = i &   j  # 6
+logneg = not i # False
+bitneg = ~i    #-16
+
+
+
+
+
+print(log)
 
 x = 3
 y = 7
