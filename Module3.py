@@ -564,9 +564,6 @@ logneg = not i # False
 bitneg = ~i    #-16
 
 
-
-
-
 print(log)
 
 x = 3
